@@ -1,0 +1,92 @@
+{
+    "order": 3,
+    "title": "Music & Sound",
+    "description": "A selection of music composing, production and sound design projects, both personal and commissioned.",
+    "img_small": "Sound.jpg",
+    "img_big": "",
+    "url": "",
+    "date": "",
+    "items": [
+        {
+            "title": "Spacebarman",
+            "description": "My main music project. I compose, record and produce all the music for Spacebarman. I have released an album and several EPs. It has recently become a live band with my colleagues Mauricio Belalcázar and Pablo Monroy.",
+            "img_small": "Spacebarman-logo-big.jpg",
+            "img_big": "Spacebarman-logo-big.jpg",
+            "ext_link": "https://www.spacebarman.com",
+            "date": "",
+            "items": []
+        },
+        {
+            "title": "Unfulfilled",
+            "description": "A collection of short songs, b-sides and rejected soundtrack pieces.",
+            "img_small": "Unfulfilled.jpg",
+            "img_big": "Unfulfilled.jpg",
+            "ext_link": "https://jpcarrascal.bandcamp.com/album/unfulfilled",
+            "date": "2010",
+            "items": []
+        },
+        {
+            "title": "El Fin de una Dictadura",
+            "description": "A short zobie film (2010) directed by Alex Quezada. In the director's words, 'a reflection about a unpunished events of recent Colombian history'.",
+            "img_small": "Fin-dictadura-big.jpg",
+            "img_big": "Fin-dictadura-big.jpg",
+            "ext_link": "https://www.youtube.com/watch?v=BiDh2ydiLGs",
+            "date": "2017",
+            "items": []
+        },
+        {
+            "title": "MixPerceptions",
+            "description": "An Augmented-Reality art installation in which users interact with artworks with their smartphone or tablets and headphones. I created the soundtrack, sound design and programmed the audio interaction using Puredata. Finalist in the Siggraph 2014 AR contest",
+            "img_small": "MixPerceptions.jpg",
+            "img_big": "https://vimeo.com/65799488",
+            "ext_link": "https://vimeo.com/65799488",
+            "date": "2014",
+            "items": []
+        },
+        {
+            "title": "Mi Amigo Picú (My Friend Picú)",
+            "description": "I designed the sound and co-composed the music (along with Daniela Torres) for this short film for children",
+            "img_small": "Picu.jpg",
+            "img_big": "https://vimeo.com/64119265",
+            "ext_link": "https://vimeo.com/64119265",
+            "date": "2013",
+            "items": []
+        },
+        {
+            "title": "Dunas (Dunes)",
+            "description": "A surreal short film (2010) directed by Alex Quezada. I created the sound effects and composed the soundtrack",
+            "img_small": "Dunas.jpg",
+            "img_big": "https://vimeo.com/40977141",
+            "ext_link": "https://vimeo.com/40977141",
+            "date": "2010",
+            "items": []
+        },
+        {
+            "title": "La Fábrica (a.k.a. Fabricamusic)",
+            "description": "A pioneer electronic rock band from Cali, Colombia. I co-composed and produced most of the music between 2000 and 2010. The linked Bandcamp site includes a selection of works.",
+            "img_small": "LaFabrica.jpg",
+            "img_big": "LaFabrica.jpg",
+            "ext_link": "https://lafabrica.bandcamp.com/",
+            "date": "2000-2010",
+            "items": []
+        },
+        {
+            "title": "Yo soy otro (Others)",
+            "description": "A fantasy film by Colombian director Oscar Campo. I composed most of the original soundtrack (while working with La Fábrica).",
+            "img_small": "YoSoyOtro.jpg",
+            "img_big": "YoSoyOtro.jpg",
+            "ext_link": "https://lafabrica.bandcamp.com/album/yo-no-soy-ost",
+            "date": "2008",
+            "items": []
+        },
+        {
+            "title": "Los Ciclos (Cycles)",
+            "description": "A short film directed by Juan Manuel Acuña. I designed the sound effects for the short. Original score composed by Alejandro Ramírez Rojas",
+            "img_small": "LosCiclos.jpg",
+            "img_big": "https://www.youtube.com/watch?v=OWUaPBhG6_A",
+            "ext_link": "https://www.youtube.com/watch?v=OWUaPBhG6_A",
+            "date": "2007",
+            "items": []
+        }
+    ]
+}

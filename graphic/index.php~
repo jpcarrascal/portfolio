@@ -1,0 +1,11 @@
+<?php
+$uri = explode("/",$_SERVER["REQUEST_URI"]);
+$base_uri = implode("/", Array($uri[0], $uri[1], $uri[2]));
+$whatever = array_shift($uri);
+$whatever = array_shift($uri);
+$whatever = array_shift($uri);
+$dest_uri = implode("/", $uri);
+header ("Location: http://".$_SERVER["HTTP_HOST"].$base_uri."/?dir=".$dest_uri);
+die();
+
+?>

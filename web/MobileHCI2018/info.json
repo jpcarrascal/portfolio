@@ -1,0 +1,57 @@
+{
+    "order": 1,
+    "title": "MobileHCI 2018",
+    "description": "Web and print work for the 20th International Conference on Human-Computer Interaction with Mobile Devices and Services (MobileHCI) 2018 conference.",
+    "img_small": "MobileHCI2018.jpg",
+    "img_big": "",
+    "url": "",
+    "date": "2018",
+    "items": [
+        {
+            "order": 1,
+            "title": "Base design",
+            "description": "The main design combines the city skyline, the colors of Barcelona's sky at sunset time and the Voronoi patterns created by cell phone tower coverage.",
+            "img_small": "MobileHCI2018.jpg",
+            "img_big": "MobileHCI2018-big.jpg",
+            "url": "",
+            "date": "2018"
+        },
+        {
+            "order": 3,
+            "title": "Website",
+            "description": "The MobileHCI 2018 website (along with Facebook and Twitter accounts) were used to communicate submission deadlines and news about the conference to the research community.",
+            "img_small": "Website.jpg",
+            "img_big": "Website.jpg",
+            "ext_link": "http://mobilehci.acm.org/2018",
+            "url": "http://mobilehci.acm.org/2018",
+            "date": "2018"
+        },
+        {
+            "order": 3,
+            "title": "Magazine ad",
+            "description": "Ad in the ACM Communications magazine.",
+            "img_small": "ACMCommunications.jpg",
+            "img_big": "",
+            "url": "",
+            "date": "2018"
+        },
+        {
+            "order": 4,
+            "title": "Flyer",
+            "description": "",
+            "img_small": "Flyer-photo.jpg",
+            "img_big": "Flyer.jpg",
+            "url": "",
+            "date": "2018"
+        },
+        {
+            "order": 5,
+            "title": "T-shirt",
+            "description": "",
+            "img_small": "Tshirt-small.jpg",
+            "img_big": "Tshirt-big.jpg",
+            "url": "",
+            "date": "2018"
+        }
+    ]
+}
