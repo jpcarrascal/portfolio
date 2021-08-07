@@ -1,12 +1,22 @@
 {
     "order": 1,
     "title": "Software & Hardware",
-    "description": "Coding, hacking, research prototypes, interactive systems...",
+    "description": "Coding, hacking, research prototypes, interactive systems, etc.",
     "img_small": "interaction.jpg",
     "img_big": "",
     "url": "",
     "date": "",
     "items": [
+        {
+            "order": 0,
+            "title": "GitHub",
+            "description": "Browse my public GitHub Repositories",
+            "img_small": "GitHub.jpg",
+            "img_big": "GitHub.jpg",
+            "ext_link": "https://github.com/jpcarrascal/",
+            "url": "",
+            "date": ""
+        },
         {
             "order": 0,
             "title": "Opportunity Mapper",
@@ -115,7 +125,7 @@
             "img_big": "ResearchPortfolio.jpg",
             "ext_link": "https://drive.google.com/file/d/1C458kic54q_1ZvTT-D5kVCY9BkXgnYGG/view?usp=sharing",
             "url": "",
-            "date": "2016"
+            "date": ""
         },
         {
             "order": 70,
