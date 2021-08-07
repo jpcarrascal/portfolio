@@ -9,13 +9,24 @@
     "date": "2018",
     "items": [
         {
-            "order": 1,
+            "order": 0,
             "title": "Spacebarman website",
             "description": "Current version",
             "long_description": "",
-            "img_small": "Spacebarman-web2018.jpg",
+            "img_small": "Spacebarman-web2020.jpg",
             "img_big": "",
             "ext_link": "http://www.spacebarman.com",
+            "url": "",
+            "date": "2020"
+        },
+        {
+            "order": 1,
+            "title": "Spacebarman website",
+            "description": "2018 version",
+            "long_description": "",
+            "img_small": "Spacebarman-web2018.jpg",
+            "img_big": "",
+            "ext_link": "http://www.spacebarman.com/sites/2018-persona/",
             "url": "",
             "date": "2018"
         },
@@ -26,7 +37,7 @@
             "long_description": "",
             "img_small": "Spacebarman-web2014.jpg",
             "img_big": "",
-            "ext_link": "http://www.spacebarman.com/previous/2014",
+            "ext_link": "http://www.spacebarman.com/sites/2014",
             "url": "",
             "date": "2014"
         },
@@ -37,7 +48,7 @@
             "long_description": "",
             "img_small": "Spacebarman-web2013.jpg",
             "img_big": "",
-            "ext_link": "http://www.spacebarman.com/previous/2013",
+            "ext_link": "http://www.spacebarman.com/sites/2013",
             "url": "",
             "date": "2013"
         },        

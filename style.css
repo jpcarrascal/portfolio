@@ -241,7 +241,7 @@ body
 .project-description
 {
     color: #999;
-    padding: 20px;
+    padding: 1.7%;
     height: auto;
 }
 
@@ -265,6 +265,16 @@ body
 .greyscale
 {
     filter: grayscale(100%);
+}
+
+.greyscale-ish
+{
+    filter: grayscale(30%);
+}
+
+.greyscale-ish:hover
+{
+    filter: grayscale(0%);
 }
 
 .item-text
@@ -298,7 +308,7 @@ body
 {
     text-shadow: 2px 2px 1px rgba(0,0,0,0.3);
     color: white;
-    transition: all .1s;
+    transition: all .3s;
 }
 
 .darken
@@ -308,7 +318,7 @@ body
 
 .darken:hover
 {
-    background-color: rgba(0,0,0,0.5) !important;
+    background-color: rgba(0,0,0,0.75) !important;
 }
 
 

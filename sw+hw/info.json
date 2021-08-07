@@ -1,0 +1,171 @@
+{
+    "order": 1,
+    "title": "Software & Hardware",
+    "description": "Coding, hacking, research prototypes, interactive systems...",
+    "img_small": "interaction.jpg",
+    "img_big": "",
+    "url": "",
+    "date": "",
+    "items": [
+        {
+            "order": 0,
+            "title": "Opportunity Mapper",
+            "description": "Web app to calculate Opportunity Scores and Map",
+            "img_small": "OppMap.jpg",
+            "img_big": "OppMap.jpg",
+            "ext_link": "https://jpcarrascal.github.io/OppScoreWeb/",
+            "url": "",
+            "date": "2021"
+        },
+        {
+            "order": 0,
+            "title": "MoMc modular MIDI controller",
+            "description": "Arduino-based modular MIDI pedal controller",
+            "img_small": "MoMc.jpg",
+            "img_big": "MoMc.jpg",
+            "ext_link": "https://github.com/jpcarrascal/MoMc",
+            "url": "",
+            "date": "2021"
+        },
+        {
+            "order": 0,
+            "title": "Lockdown",
+            "description": "An interactive videoclip for Spacebarman's song <i>Lockdown</i>. Built with WebVR/WebXR (i.e. browser-based), but best experienced with an Oculus Quest",
+            "img_small": "Lockdown-big.jpg",
+            "img_big": "Lockdown-big.jpg",
+            "ext_link": "https://lockdown-vr.glitch.me/",
+            "url": "",
+            "date": "2020"
+        },
+        {
+            "order": 0,
+            "title": "BLESync",
+            "description": "A Bluetooth device for synchronizing tap-tempo pedals to computer DAWs",
+            "img_small": "BLESync-big.jpg",
+            "img_big": "BLESync-big.jpg",
+            "ext_link": "https://github.com/jpcarrascal/blesync",
+            "url": "",
+            "date": "2019"
+        },
+        {
+            "order": 9,
+            "title": "MagicScroll",
+            "description": "A rollable display device with flexible screen area and gestural input. I designed and coded a dual-browser, dual-device software interface for this device",
+            "img_small": "MagicScroll.jpg",
+            "img_big": "MagicScroll.jpg",
+            "ext_link": "https://www.youtube.com/watch?v=hR6UMm4LcOc",
+            "url": "",
+            "date": "2018"
+        },
+        {
+            "order": 10,
+            "title": "ReFlex",
+            "description": "World's first self-contained flexible smartphone. I designed the haptic engine and collaborated on the R&D behind this experimental device",
+            "img_small": "ReFlex.jpg",
+            "img_big": "ReFlex.jpg",
+            "ext_link": "https://www.youtube.com/watch?v=Sfc_Peev660",
+            "url": "",
+            "date": "2016"
+        },
+        {
+            "order": 20,
+            "title": "Haptics on Cylindrical Displays",
+            "description": "<i>Effects of Tactile Feedback on the Perception of Virtual Shapes on Non-Planar DisplayObjects</i>. I designed the experimental device, software, haptic feedback, and study for this research project",
+            "img_small": "HapticCylinder.jpg",
+            "img_big": "HapticCylinder.jpg",
+            "ext_link": "https://www.youtube.com/watch?v=otMa-CNI8ts",
+            "url": "",
+            "date": "2017"
+        },
+        {
+            "order": 30,
+            "title": "An Evaluation of Shape Changes for Conveying Emotions",
+            "description": "Is it possible to recognize emotions from dynamic shape changes? This project explores this idea when applied to an hypothetical flexible phone",
+            "img_small": "FlexibleEmoticons.jpg",
+            "img_big": "FlexibleEmoticons.jpg",
+            "ext_link": "https://www.youtube.com/watch?v=JQ9eUHHA4bI",
+            "url": "",
+            "date": "2016"
+        },
+        {
+            "order": 40,
+            "title": "Multitouch Interface for Audio Mixing",
+            "description": "A digital prototype and study aimed at challenging traditional audio mixer design using a multitouch interface",
+            "img_small": "MultitouchMixer.jpg",
+            "img_big": "MultitouchMixer.jpg",
+            "ext_link": "http://jpcarrascal.com/multitouchmixer/",
+            "url": "",
+            "date": "2010"
+        },
+        {
+            "order": 50,
+            "title": "AR Wall",
+            "description": "An interactive customer wall that uses augmented reality wall to communicate the results of a UX study conducted at Microsoft",
+            "img_small": "ARWall.jpg",
+            "img_big": "ARWall-big.jpg",
+            "ext_link": "",
+            "url": "",
+            "date": "2018"
+        },
+        {
+            "order": 60,
+            "title": "HCI/UX Research Portfolio",
+            "description": "A portfolio with a selection of Human-Computer Interaction and User Experience research projects (PDF download, last updated in mid-2021)",
+            "img_small": "ResearchPortfolio.jpg",
+            "img_big": "ResearchPortfolio.jpg",
+            "ext_link": "https://drive.google.com/file/d/1C458kic54q_1ZvTT-D5kVCY9BkXgnYGG/view?usp=sharing",
+            "url": "",
+            "date": "2016"
+        },
+        {
+            "order": 70,
+            "title": "BlueMO",
+            "description": "BlueMO is a Bluetooth LE to MIDI/OSC translator for Mac OS X",
+            "img_small": "BlueMO.jpg",
+            "img_big": "BlueMO.jpg",
+            "ext_link": "http://blog.jpcarrascal.com/2016/04/bluemo-a-bluetooth-le-to-midi-and-osc-translator-for-mac-os-x/",
+            "url": "",
+            "date": "2016"
+        },
+        {
+            "order": 80,
+            "title": "Macbook trackpad as controller for Ableton Live",
+            "description": "Max for Live device for using a Macbook trackpad as an Ableton Live controller",
+            "img_small": "Live-Max-Touchpad_control.jpg",
+            "img_big": "Live-Max-Touchpad_control.jpg",
+            "ext_link": "http://blog.jpcarrascal.com/2011/01/touchpad-controller-updated-and-enhanced/",
+            "url": "",
+            "date": "2010"
+        },
+        {
+            "order": 90,
+            "title": "Random as control",
+            "description": "A simple experiment on using dice-rolling (a familiar example of randomness) as a control source",
+            "img_small": "RandomController.jpg",
+            "img_big": "RandomController.jpg",
+            "ext_link": "http://blog.jpcarrascal.com/2010/04/using-our-notion-of-randomness-as-a-controller/",
+            "url": "",
+            "date": "2010"
+        },
+        {
+            "order": 100,
+            "title": "Augmented guitar",
+            "description": "My take on the old theme of augmenting electric guitars with electronics",
+            "img_small": "AugmentedGuitar.jpg",
+            "img_big": "AugmentedGuitar.jpg",
+            "ext_link": "http://blog.jpcarrascal.com/2010/03/look-ma-no-wiimote/",
+            "url": "",
+            "date": "2010"
+        },
+        {
+            "order": 110,
+            "title": "Bicing Spider",
+            "description": "An experiment on Web data scraping and interactive visualization using Quartz Composer",
+            "img_small": "BicingSpider.jpg",
+            "img_big": "BicingSpider.jpg",
+            "ext_link": "https://vimeo.com/20903440",
+            "url": "",
+            "date": "2011"
+        }
+    ]
+}

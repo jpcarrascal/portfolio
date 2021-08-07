@@ -87,7 +87,10 @@ else
 
 
 $bg_colors = ["#4abdac", "#fc4a14", "#f7b733", "#dfdce3", "#aaaaaa"];
+
 $bg_colors_trans = ["rgba(74,189,172,0.85)", "rgba(252,74,20,0.85)", "rgba(247,183,51,0.85)", "rgba(170,170,170,0.85)", "rgba(103,100,107,0.85)"];
+
+
 // "rgba(223,220,227,0.8)"
 //shuffle($bg_colors);
 //shuffle($bg_colors_trans);
@@ -216,7 +219,7 @@ MUSIC+SOUND DESIGN:
                         $big = $project->img_big;
                         $img_src_big = ( $big==""?$img_src:($basedir."/".$project->project_folder."/".$project->img_big) );
                         list($width, $height, $type, $attr) = getimagesize($img_loc);
-                        echo "<img class='item-img-bg' src='".$img_src."' />\n";
+                        echo "<img class='item-img-bg greyscale-ish' src='".$img_src."' />\n";
                     }
                     $has_ext_link = false;
                     if(isset($project->ext_link) && preg_match("/^((https?|ftp)\:\/\/)/",$project->ext_link))

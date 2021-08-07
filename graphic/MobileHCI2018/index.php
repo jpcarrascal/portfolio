@@ -216,7 +216,7 @@ MUSIC+SOUND DESIGN:
                         $big = $project->img_big;
                         $img_src_big = ( $big==""?$img_src:($basedir."/".$project->project_folder."/".$project->img_big) );
                         list($width, $height, $type, $attr) = getimagesize($img_loc);
-                        echo "<img class='item-img-bg' src='".$img_src."' />\n";
+                        echo "<img class='item-img-bg greyscale-ish' src='".$img_src."' />\n";
                     }
                     $has_ext_link = false;
                     if(isset($project->ext_link) && preg_match("/^((https?|ftp)\:\/\/)/",$project->ext_link))
