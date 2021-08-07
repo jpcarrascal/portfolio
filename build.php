@@ -20,7 +20,10 @@ function endsWith( $haystack, $needle ) {
 
 $objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path), RecursiveIteratorIterator::SELF_FIRST);
 foreach($objects as $name => $object){
-    if( is_dir($name) && !endsWith($name, ".") && strpos($name, "/.") === false ) echo "$name\n";
+    if( is_dir($name) && !endsWith($name, ".") && strpos($name, "/.") === false ) {
+        echo "$name\n";
+        copy("index.php", $name."/index.php");
+    }
      
 }
 

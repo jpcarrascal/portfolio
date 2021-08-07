@@ -1,7 +1,7 @@
 {
     "order": 1,
     "title": "Interaction",
-    "description": "Interactive systems for research and fun.",
+    "description": "Interactive systems for research, music performance, etc.",
     "img_small": "interaction.jpg",
     "img_big": "",
     "url": "",
@@ -33,7 +33,7 @@
             "description": "A rollable display device with flexible screen area and gestural input. I designed and coded a dual-browser, dual-device software interface for this device",
             "img_small": "MagicScroll.jpg",
             "img_big": "MagicScroll.jpg",
-            "ext_link": "https://flux.cs.queensu.ca/news/2018/08/31/human-media-labs-rollable-tablet-magicscroll-in-the-news/",
+            "ext_link": "https://www.youtube.com/watch?v=hR6UMm4LcOc",
             "url": "",
             "date": "2018"
         },
@@ -43,7 +43,7 @@
             "description": "World's first self-contained flexible smartphone. I designed the haptic engine and collaborated on the R&D behind this experimental device",
             "img_small": "ReFlex.jpg",
             "img_big": "ReFlex.jpg",
-            "ext_link": "http://www.hml.queensu.ca/blog/reflex",
+            "ext_link": "https://www.youtube.com/watch?v=Sfc_Peev660",
             "url": "",
             "date": "2016"
         },
