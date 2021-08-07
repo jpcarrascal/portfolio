@@ -15,18 +15,15 @@ function debug_this($p) {
     echo "</pre>";
 }
 
-
-if( isset($_GET["dir"]) )
-{
-    $basedir = $_GET["dir"];
-}
+if( isset($_SERVER["REQUEST_URI"]) && !isset($basedir) )
+    $basedir = $_SERVER["REQUEST_URI"];
 else
-    $basedir = ".";
-//if( substr($basedir, -1) != "/" )
-//    $basedir = $basedir . "/";
-if($basedir == "") $basedir = ".";
-$basedir = $_SERVER["REQUEST_URI"];
-$absdir = $_SERVER["DOCUMENT_ROOT"].$basedir;
+    $basedir = $argv[1];
+
+if( isset($_SERVER["DOCUMENT_ROOT"]) && !isset($docroot) )
+    $docroot = $_SERVER["DOCUMENT_ROOT"];
+else
+    $docroot = "/";
 
 $is_project = false;
 $path_array = preg_split("/\//", $basedir);
@@ -46,7 +43,7 @@ if( $path_len > 0 )
     //            die     ("No info file found!\n");
             $path_walk .= $path_array[$i]."/";
             $breadcrumb["url"] = "/".$path_walk;
-            $json_path = $_SERVER["DOCUMENT_ROOT"].$breadcrumb["url"]."info.json";
+            $json_path = $docroot.$breadcrumb["url"]."info.json";
             $tmp = json_decode(file_get_contents($json_path));
   
             $breadcrumb["title"] = $tmp->title;
@@ -68,12 +65,12 @@ if( count($dir_info->items) > 0 )
 else
 {
     if($basedir !== "/") $basedir .= "/";
-    $files = preg_grep('/^([^.])/', scandir($absdir));
+    $files = preg_grep('/^([^.])/', scandir(__DIR__));
     $items = Array();
     foreach($files as $f)
     {
     //preg_match("/^[0-9,a-z,A-Z]+/", $f) !== 0 &&
-        $file_path = $absdir."/".$f;
+        $file_path = __DIR__."/".$f;
         $json_file = $file_path."/info.json";
         if( is_dir($file_path) && $f !== "images" && file_exists($json_file))
         {          
@@ -101,7 +98,7 @@ $bg_colors_trans = ["rgba(74,189,172,0.85)", "rgba(252,74,20,0.85)", "rgba(247,1
 <head>
 
 <?php 
-if ( strpos($_SERVER["SERVER_NAME"], "localhost")  === false):
+if ( isset($_SERVER["SERVER_NAME"]) && strpos($_SERVER["SERVER_NAME"], "localhost")  === false):
 ?>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15242862-1"></script>
@@ -215,9 +212,9 @@ MUSIC+SOUND DESIGN:
                     if($project->img_small != "")
                     {
                         $img_src = $basedir.$project->project_folder."/".$project->img_small;
-                        $img_loc = $absdir.$project->project_folder."/".$project->img_small;
+                        $img_loc = __DIR__.$project->project_folder."/".$project->img_small;
                         $big = $project->img_big;
-                        $img_src_big = ( $big==""?$img_src:($basedir."/".$project->project_folder."/".$project->img_big) );
+                        $img_src_big = ( $big==""?$img_src:($basedir.$project->project_folder."/".$project->img_big) );
                         list($width, $height, $type, $attr) = getimagesize($img_loc);
                         echo "<img class='item-img-bg greyscale-ish' src='".$img_src."' />\n";
                     }
@@ -256,7 +253,7 @@ MUSIC+SOUND DESIGN:
                     if($project->img_small != "")
                     {
                         $img_src = $basedir.$project->project_folder."/".$project->img_small;
-                        $img_loc = $absdir.$project->project_folder."/".$project->img_small;
+                        $img_loc = __DIR__."/".$project->project_folder."/".$project->img_small;
                         list($width, $height, $type, $attr) = getimagesize($img_loc);
                         echo "<img class='item-img-bg greyscale fill-wide' src='".$img_src."' />\n";
                     }
@@ -333,8 +330,9 @@ MUSIC+SOUND DESIGN:
 </html>
 
 <?php
-//echo "<br /><br /><br /><br /><br /><br /><br /><br /><br /><pre>";
+echo "<br /><br /><br /><br /><br /><br /><br /><br /><br /><pre>";
 
+//var_dump(preg_split("/portfolio/", __DIR__));
 
 //var_dump($_SERVER);
 ?>

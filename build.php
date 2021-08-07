@@ -1,6 +1,7 @@
 <?php
 
-$path = realpath('.');
+$abspath = realpath('.');
+$path = ".";
 
 // These 2 functions from: https://stackoverflow.com/questions/834303/startswith-and-endswith-functions-in-php
 function startsWith( $haystack, $needle ) {
@@ -22,7 +23,21 @@ $objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path), 
 foreach($objects as $name => $object){
     if( is_dir($name) && !endsWith($name, ".") && strpos($name, "/.") === false ) {
         echo "$name\n";
-        copy("index.php", $name."/index.php");
+        $basedir = substr( $name, 1 );
+        copy("source.php", $name."/index.php");
+        chdir($name);
+
+        /*
+        ob_start();
+        include_once('index.php');
+        $html = ob_get_clean();
+        if( file_exists("index.html") ) unlink("index.html");
+        file_put_contents("index.html", $html);
+        */
+
+        shell_exec("/usr/bin/php index.php ".$basedir."> index.html");
+        if( file_exists("index.php") ) unlink("index.php");
+        chdir($abspath);
     }
      
 }
