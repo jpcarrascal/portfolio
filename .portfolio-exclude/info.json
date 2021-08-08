@@ -1,0 +1,20 @@
+{
+    "order": 1,
+    "title": "Software & Hardware",
+    "description": "Coding, hacking, research tools and prototypes, interactive systems, etc.",
+    "img_small": "interaction.jpg",
+    "img_big": "",
+    "url": "",
+    "date": "",
+    "items": [
+        {
+            "order": 60,
+            "title": "HCI/UX Research Portfolio",
+            "description": "A portfolio with a selection of Human-Computer Interaction and User Experience research projects (PDF download, last updated in mid-2021)",
+            "img_small": "ResearchPortfolio.jpg",
+            "img_big": "ResearchPortfolio.jpg",
+            "ext_link": "https://drive.google.com/file/d/1C458kic54q_1ZvTT-D5kVCY9BkXgnYGG/view?usp=sharing",
+            "url": "",
+            "date": ""
+        }]
+}

@@ -1,0 +1,101 @@
+{
+    "order": 1,
+    "title": "HCI & UX",
+    "description": "Research projects, prototypes and tools.",
+    "img_small": "ReFlex.jpg",
+    "img_big": "",
+    "url": "",
+    "date": "",
+    "items": [
+        {
+            "order": 0,
+            "title": "Opportunity Mapper",
+            "description": "Web app to calculate Opportunity Scores and Map",
+            "img_small": "OppMap.jpg",
+            "img_big": "OppMap.jpg",
+            "ext_link": "https://jpcarrascal.github.io/OppScoreWeb/",
+            "url": "",
+            "date": "2021"
+        },
+        {
+            "order": 0,
+            "title": "IPF topic graph",
+            "description": "(Microsoft internal) Analysis and report of a listening tour on the future of software development",
+            "img_small": "ipf-graph.jpg",
+            "img_big": "ipf-graph.jpg",
+            "ext_link": "https://ipf-future-sw-dev-graph.azurewebsites.net/",
+            "url": "",
+            "date": "2020"
+        },
+        {
+            "order": 0,
+            "title": "IPF opportunity map",
+            "description": "(Microsoft internal) A tool for inovation management",
+            "img_small": "ipf-map.jpg",
+            "img_big": "ipf-map.jpg",
+            "ext_link": "https://ipf-main.azurewebsites.net/",
+            "url": "",
+            "date": "2021"
+        },
+        {
+            "order": 9,
+            "title": "MagicScroll",
+            "description": "A rollable display device with flexible screen area and gestural input. I designed and coded a dual-browser, dual-device software interface for this device",
+            "img_small": "MagicScroll.jpg",
+            "img_big": "MagicScroll.jpg",
+            "ext_link": "https://www.youtube.com/watch?v=hR6UMm4LcOc",
+            "url": "",
+            "date": "2018"
+        },
+        {
+            "order": 50,
+            "title": "AR Wall",
+            "description": "An augmented reality customer wall to share results from a UX research project conducted at Microsoft",
+            "img_small": "ARWall.jpg",
+            "img_big": "ARWall-big.jpg",
+            "ext_link": "",
+            "url": "",
+            "date": "2018"
+        },
+        {
+            "order": 10,
+            "title": "ReFlex",
+            "description": "World's first self-contained flexible smartphone. I designed the haptic engine and collaborated on the R&D behind this experimental device",
+            "img_small": "ReFlex.jpg",
+            "img_big": "ReFlex.jpg",
+            "ext_link": "https://www.youtube.com/watch?v=Sfc_Peev660",
+            "url": "",
+            "date": "2016"
+        },
+        {
+            "order": 20,
+            "title": "Haptics on Cylindrical Displays",
+            "description": "<i>Effects of Tactile Feedback on the Perception of Virtual Shapes on Non-Planar DisplayObjects</i>. I designed the experimental device, software, haptic feedback, and study for this research project",
+            "img_small": "HapticCylinder.jpg",
+            "img_big": "HapticCylinder.jpg",
+            "ext_link": "https://www.youtube.com/watch?v=otMa-CNI8ts",
+            "url": "",
+            "date": "2017"
+        },
+        {
+            "order": 30,
+            "title": "An Evaluation of Shape Changes for Conveying Emotions",
+            "description": "Is it possible to recognize emotions from dynamic shape changes? This project explores this idea when applied to an hypothetical flexible phone",
+            "img_small": "FlexibleEmoticons.jpg",
+            "img_big": "FlexibleEmoticons.jpg",
+            "ext_link": "https://www.youtube.com/watch?v=JQ9eUHHA4bI",
+            "url": "",
+            "date": "2016"
+        },
+        {
+            "order": 40,
+            "title": "Multitouch Interface for Audio Mixing",
+            "description": "A digital prototype and study aimed at challenging traditional audio mixer design using a multitouch interface",
+            "img_small": "MultitouchMixer.jpg",
+            "img_big": "MultitouchMixer.jpg",
+            "ext_link": "http://jpcarrascal.com/multitouchmixer/",
+            "url": "",
+            "date": "2010"
+        }
+    ]
+}
