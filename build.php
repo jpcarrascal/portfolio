@@ -18,14 +18,15 @@ function endsWith( $haystack, $needle ) {
 }
 
 
+copy("source.php", "index.php");
 
 $objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path), RecursiveIteratorIterator::SELF_FIRST);
 foreach($objects as $name => $object){
     if( is_dir($name) && !endsWith($name, ".") && strpos($name, "/.") === false ) {
         echo "$name\n";
-        $basedir = substr( $name, 1 );
+        //$basedir = substr( $name, 1 );
         copy("source.php", $name."/index.php");
-        chdir($name);
+        //chdir($name);
 
         /*
         ob_start();
@@ -35,9 +36,10 @@ foreach($objects as $name => $object){
         file_put_contents("index.html", $html);
         */
 
-        shell_exec("/usr/bin/php index.php ".$basedir."> index.html");
-        if( file_exists("index.php") ) unlink("index.php");
-        chdir($abspath);
+        //shell_exec("/usr/bin/php index.php ".$basedir."> index.html");
+        //if( file_exists("index.php") ) unlink("index.php");
+        //if( file_exists("index.html") ) unlink("index.html");
+        //chdir($abspath);
     }
      
 }
