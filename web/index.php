@@ -264,6 +264,8 @@ MUSIC+SOUND DESIGN:
                     }
                     if( preg_match("/^((https?|ftp)\:\/\/)/",$project->img_big) )
                         echo "<a href='".$project->img_big."' target=_blank>\n";
+                    elseif( $project->url !== "" )
+                        echo "<a href='".$project->url."' target=_blank>\n";
                     else
                         echo "<a href='".$basedir.$project->project_folder."'>\n";
                     echo "<div class='item-text' style='background-color:".$bg_colors_trans[$i]."'>\n";
