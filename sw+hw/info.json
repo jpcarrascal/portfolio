@@ -10,7 +10,7 @@
         {
             "order": 0,
             "title": "GitHub",
-            "description": "Browse my public GitHub Repositories",
+            "description": "Browse my public GitHub repositories",
             "img_small": "GitHub.jpg",
             "img_big": "GitHub.jpg",
             "ext_link": "https://github.com/jpcarrascal/",
