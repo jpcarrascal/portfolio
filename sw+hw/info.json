@@ -19,6 +19,16 @@
         },
         {
             "order": 0,
+            "title": "BLE-MIDI glove controller",
+            "description": "A BluetoothLE-MIDI-based glove controller.",
+            "img_small": "MIDI-BLE-glove.jpg",
+            "img_big": "MIDI-BLE-glove.jpg",
+            "ext_link": "https://github.com/jpcarrascal/BTMIDIGloveController",
+            "url": "",
+            "date": "2021"
+        },
+        {
+            "order": 0,
             "title": "MoMc modular MIDI controller",
             "description": "Arduino-based modular MIDI pedal controller",
             "img_small": "MoMc.jpg",

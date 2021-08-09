@@ -20,7 +20,7 @@
         {
             "order": 0,
             "title": "IPF topic graph",
-            "description": "(Microsoft internal) Analysis and report of a listening tour on the future of software development",
+            "description": "(Microsoft internal) WebGL visualization of a listening tour on the future of software development",
             "img_small": "ipf-graph.jpg",
             "img_big": "ipf-graph.jpg",
             "ext_link": "https://ipf-future-sw-dev-graph.azurewebsites.net/",
@@ -90,7 +90,7 @@
         {
             "order": 40,
             "title": "Multitouch Interface for Audio Mixing",
-            "description": "A digital prototype and study aimed at challenging traditional audio mixer design using a multitouch interface",
+            "description": "A digital prototype and study aimed at challenging traditional audio mixer design using a multitouch interface. My MSc thesis included the design and evaluation of this prototype",
             "img_small": "MultitouchMixer.jpg",
             "img_big": "MultitouchMixer.jpg",
             "ext_link": "http://jpcarrascal.com/multitouchmixer/",
