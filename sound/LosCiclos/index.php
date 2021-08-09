@@ -325,7 +325,7 @@ MUSIC+SOUND DESIGN:
     </div>
     <div id="credit">
     <span>
-    Designed and coded by <a href="http://www.jpcarrascal.com">JP Carrascal</a>
+    Designed and coded by <a href="http://www.jpcarrascal.com" target="_blank">JP Carrascal</a>
     </span>
     </div>
 </div>
