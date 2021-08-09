@@ -63,7 +63,7 @@
             "description": "BlueMO is a Bluetooth LE to MIDI/OSC translator for Mac OS X",
             "img_small": "BlueMO.jpg",
             "img_big": "BlueMO.jpg",
-            "ext_link": "http://blog.jpcarrascal.com/2016/04/bluemo-a-bluetooth-le-to-midi-and-osc-translator-for-mac-os-x/",
+            "ext_link": "https://github.com/jpcarrascal/BlueMO/",
             "url": "",
             "date": "2016"
         },
