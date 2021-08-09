@@ -9,7 +9,7 @@ function autofill()
 $(document).ready(function() {
 
 
-var curscroll = $(window).scrollTop();
+    var curscroll = $(window).scrollTop();
     $(window).scroll(function(){
         if( $(window).scrollTop() > 10 && curscroll != $(window).scrollTop() ) {
             $(".title-letter").addClass("smaller");
@@ -22,14 +22,17 @@ var curscroll = $(window).scrollTop();
     });
     
 
-     autofill();
+    autofill();
      
-     $( window ).resize(function() {
-         autofill();
-     });
-     
+    $( window ).resize(function() {
+        autofill();
+    });
+
+    $(window).on("popstate", function (event, state) {
+        $("#veil").css("visibility","hidden");
+    });
+
     $(".view").click(function() {
-        //window.location.hash = "#";
         $("#show").height($(window).height());
         var url = $(this).attr("url");
         $("#show-image").css("cursor","");
@@ -70,10 +73,14 @@ var curscroll = $(window).scrollTop();
                     $("#veil").css("visibility","visible");
                 }
             });
+        var imgArr = $(this).attr("img").split("/");
+        var imgName = imgArr[imgArr.length - 1]
+        history.pushState({page: 1}, imgName, "?view="+imgName)
     });
 
     $(".close").click(function() {
         $("#veil").css("visibility","hidden");
+        window.history.back();
     });
     
     $(document).keyup(function(e) {
