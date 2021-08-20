@@ -13,5 +13,5 @@ jobs:
       with:
         server: ftp.jpcarrascal.com
         server-dir: public_html/jpcarrascal.com/design-portfolio
-        password: ${{ secrets.JPCARRASCAL_FTP_PASSWORD }}
         username: ${{ secrets.JPCARRASCAL_FTP_USERNAME }}
+        password: ${{ secrets.JPCARRASCAL_FTP_PASSWORD }}
