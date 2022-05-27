@@ -29,6 +29,26 @@
         },
         {
             "order": 0,
+            "title": "Count-Me-In",
+            "description": "A collaborative step sequencer for audience participation in music performances.",
+            "img_small": "countmein.jpg",
+            "img_big": "countmein.jpg",
+            "ext_link": "https://jpcarrascal.github.io/count-me-in/",
+            "url": "",
+            "date": "2022"
+        },
+        {
+            "order": 0,
+            "title": "HootBeat",
+            "description": "A platform for MIDI-controlled lighting wearables.",
+            "img_small": "hootbeat.jpg",
+            "img_big": "hootbeat.jpg",
+            "ext_link": "https://jpcarrascal.github.io/HootBeat/",
+            "url": "",
+            "date": "2022"
+        },
+        {
+            "order": 0,
             "title": "MoMc modular MIDI controller",
             "description": "Arduino-based modular MIDI pedal controller",
             "img_small": "MoMc.jpg",
