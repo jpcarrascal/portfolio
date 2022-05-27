@@ -19,16 +19,6 @@
         },
         {
             "order": 0,
-            "title": "BLE-MIDI glove controller",
-            "description": "A BluetoothLE-MIDI-based glove controller.",
-            "img_small": "MIDI-BLE-glove.jpg",
-            "img_big": "MIDI-BLE-glove.jpg",
-            "ext_link": "https://github.com/jpcarrascal/BTMIDIGloveController",
-            "url": "",
-            "date": "2021"
-        },
-        {
-            "order": 0,
             "title": "Count-Me-In",
             "description": "A collaborative step sequencer for audience participation in music performances.",
             "img_small": "countmein.jpg",
@@ -46,6 +36,16 @@
             "ext_link": "https://jpcarrascal.github.io/HootBeat/",
             "url": "",
             "date": "2022"
+        },
+        {
+            "order": 0,
+            "title": "BLE-MIDI glove controller",
+            "description": "A BluetoothLE-MIDI-based glove controller.",
+            "img_small": "MIDI-BLE-glove.jpg",
+            "img_big": "MIDI-BLE-glove.jpg",
+            "ext_link": "https://github.com/jpcarrascal/BTMIDIGloveController",
+            "url": "",
+            "date": "2021"
         },
         {
             "order": 0,
