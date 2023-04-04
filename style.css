@@ -25,6 +25,14 @@ a:hover
     text-decoration: underline;
 }
 
+a.linkable {
+    text-decoration: underline;
+}
+
+a.linkable:hover {
+    color: rgba(88, 135, 255, 1);
+}
+
 .footer a:hover
 {
     color: #272729;

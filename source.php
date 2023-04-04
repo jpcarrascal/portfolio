@@ -213,41 +213,52 @@ MUSIC+SOUND DESIGN:
                 echo "</div>\n";
                 foreach($items as $project)
                 {
-                    echo "<div class='item item-project'>\n";
-                    if($project->img_small != "")
+                    if($project->title != "")
                     {
-                        $img_src = $basedir.$project->project_folder."/".$project->img_small;
-                        $img_loc = __DIR__.$project->project_folder."/".$project->img_small;
-                        $big = $project->img_big;
-                        $img_src_big = ( $big==""?$img_src:($basedir.$project->project_folder."/".$project->img_big) );
-                        list($width, $height, $type, $attr) = getimagesize($img_loc);
-                        echo "<img class='item-img-bg greyscale-ish' src='".$img_src."' />\n";
+                        echo "<div class='item item-project'>\n";
+                        if($project->img_small != "")
+                        {
+                            $img_src = $basedir.$project->project_folder."/".$project->img_small;
+                            $img_loc = __DIR__.$project->project_folder."/".$project->img_small;
+                            $big = $project->img_big;
+                            $img_src_big = ( $big==""?$img_src:($basedir.$project->project_folder."/".$project->img_big) );
+                            list($width, $height, $type, $attr) = getimagesize($img_loc);
+                            echo "<img class='item-img-bg greyscale-ish' src='".$img_src."' />\n";
+                        }
+                        $has_ext_link = false;
+                        if(isset($project->ext_link) && preg_match("/^((https?|ftp)\:\/\/)/",$project->ext_link))
+                            $has_ext_link = true;
+                        // Removing "view" class:
+                        /*
+                        echo "<div class='".($has_ext_link?"":"view")."' img='".$img_src_big."' url='".$project->url."' >\n";
+                        if($has_ext_link)
+                            echo "<a href='".$project->ext_link."' target=_blank>";
+                        */
+                        echo "<div img='".$img_src_big."' url='".$project->url."' >\n";
+                        if($has_ext_link)
+                            echo "<a href='".$project->ext_link."' target=_blank>";
+                        elseif($big != "")
+                            echo "<a href='".$img_src_big."' target=_blank>";
+                        echo "<div class='item-text darken'>\n";
+                        echo "<div class='item-text-wrapper'>\n";
+                        echo "<h3 class='item-title'>".$project->title."</h3>\n";
+                        if( $project->date != "" )
+                            $date_string = " (".$project->date.")";
+                        else
+                            $date_string = "";
+                        echo "<p class='item-description'>".$date_string." ".$project->description."</p>\n";
+                        echo "</div>\n";
+                        echo "</div>\n";
+                        if($has_ext_link)
+                            echo "</a>";
+                        echo "</div>";
+                        echo "</div>\n";
+                        $max = count($bg_colors_trans)-2;
+                        if($i>$max)
+                            $i = 0;
+                        else
+                            $i++;
                     }
-                    $has_ext_link = false;
-                    if(isset($project->ext_link) && preg_match("/^((https?|ftp)\:\/\/)/",$project->ext_link))
-                        $has_ext_link = true;
-                    echo "<div class='".($has_ext_link?"":"view")."' img='".$img_src_big."' url='".$project->url."' >\n";
-                    if($has_ext_link)
-                        echo "<a href='".$project->ext_link."' target=_blank>";
-                    echo "<div class='item-text darken'>\n";
-                    echo "<div class='item-text-wrapper'>\n";
-                    echo "<h3 class='item-title'>".$project->title."</h3>\n";
-                    if( $project->date != "" )
-                        $date_string = " (".$project->date.")";
-                    else
-                        $date_string = "";
-                    echo "<p class='item-description'>".$project->description.$date_string."</p>\n";
-                    echo "</div>\n";
-                    echo "</div>\n";
-                    if($has_ext_link)
-                        echo "</a>";
-                    echo "</div>";
-                    echo "</div>\n";
-                    $max = count($bg_colors_trans)-2;
-                    if($i>$max)
-                        $i = 0;
-                    else
-                        $i++;
                 }
             }
             else

@@ -1,7 +1,7 @@
 {
     "order": 2,
     "title": "Interaction Design",
-    "description": "Software & Hardware, coding, hacking, interactive systems, etc.",
+    "description": "Interactive systems (software & hardware)",
     "img_small": "interaction.jpg",
     "img_big": "",
     "url": "",
@@ -16,16 +16,6 @@
             "ext_link": "https://github.com/jpcarrascal/",
             "url": "",
             "date": ""
-        },
-        {
-            "order": 0,
-            "title": "Count-Me-In",
-            "description": "A collaborative step sequencer for audience participation in music performances.",
-            "img_small": "countmein.jpg",
-            "img_big": "countmein.jpg",
-            "ext_link": "https://jpcarrascal.github.io/count-me-in/",
-            "url": "",
-            "date": "2022"
         },
         {
             "order": 0,
@@ -69,13 +59,43 @@
         },
         {
             "order": 0,
+            "title": "Horizon Opportunity Map",
+            "description": "(Microsoft internal) A tool for inovation management",
+            "img_small": "ipf-map.jpg",
+            "img_big": "ipf-map.jpg",
+            "ext_link": "https://ipf-main.azurewebsites.net/",
+            "url": "",
+            "date": "2021"
+        },
+        {
+            "order": 0,
+            "title": "Topic graph",
+            "description": "(Microsoft internal) WebGL visualization of a listening tour on the future of software development",
+            "img_small": "ipf-graph.jpg",
+            "img_big": "ipf-graph.jpg",
+            "ext_link": "https://ipf-future-sw-dev-graph.azurewebsites.net/",
+            "url": "",
+            "date": "2020"
+        },
+        {
+            "order": 0,
             "title": "BLESync",
-            "description": "A Bluetooth device for synchronizing tap-tempo pedals to computer DAWs",
+            "description": "A Bluetooth device for synchronizing tap-tempo guitar pedals to computer DAWs",
             "img_small": "BLESync-big.jpg",
             "img_big": "BLESync-big.jpg",
             "ext_link": "https://github.com/jpcarrascal/blesync",
             "url": "",
             "date": "2019"
+        },
+        {
+            "order": 50,
+            "title": "AR Wall",
+            "description": "An augmented reality customer wall to share results from a UX research project conducted at Microsoft",
+            "img_small": "ARWall.jpg",
+            "img_big": "ARWall-big.jpg",
+            "ext_link": "",
+            "url": "",
+            "date": "2018"
         },
         {
             "order": 70,

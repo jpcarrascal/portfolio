@@ -1,7 +1,7 @@
 {
     "order": 3,
     "title": "Music & Sound",
-    "description": "A selection of music composing, production and sound design projects, both personal and commissioned.",
+    "description": "A selection of music composing, production, and sound design projects. Both personal and commissioned projects.",
     "img_small": "Sound.jpg",
     "img_big": "",
     "url": "",
@@ -9,7 +9,7 @@
     "items": [
         {
             "title": "Spacebarman",
-            "description": "My main music project. I compose, record and produce all the music for Spacebarman. I have released an album and several EPs. It has recently become a live band with my colleagues Mauricio Belalcázar and Pablo Monroy.",
+            "description": "My main music project. I compose, record and produce all the music for Spacebarman. I have released an album and several EPs. It has recently become a live band with a little help of my colleagues Mauricio Belalcázar (drums) and Daniel Rosero (bass).",
             "img_small": "Spacebarman-logo-big.jpg",
             "img_big": "Spacebarman-logo-big.jpg",
             "ext_link": "http://www.spacebarman.com",
@@ -26,8 +26,8 @@
             "items": []
         },
         {
-            "title": "El Fin de una Dictadura",
-            "description": "A short zombie film (2010) directed by Alex Quezada. In the director's words, 'a reflection about a unpunished events of recent Colombian history'.",
+            "title": "El Fin de una Dictadura (Dead Dictatorship)",
+            "description": "A short zombie film directed by Alex Quezada. In the director's words, 'a reflection about unpunished events of recent Colombian history'.",
             "img_small": "Fin-dictadura-big.jpg",
             "img_big": "Fin-dictadura-big.jpg",
             "ext_link": "https://www.youtube.com/watch?v=BiDh2ydiLGs",
@@ -54,7 +54,7 @@
         },
         {
             "title": "Dunas (Dunes)",
-            "description": "A surreal short film (2010) directed by Alex Quezada. I created the sound effects and composed the soundtrack",
+            "description": "A surreal short film directed by Alex Quezada. I created the sound effects and composed the soundtrack",
             "img_small": "Dunas.jpg",
             "img_big": "https://vimeo.com/40977141",
             "ext_link": "https://vimeo.com/40977141",

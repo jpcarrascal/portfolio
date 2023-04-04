@@ -31,7 +31,7 @@
             "title": "Magazine ad",
             "description": "Ad in the ACM Communications magazine.",
             "img_small": "ACMCommunications.jpg",
-            "img_big": "",
+            "img_big": "ACMCommunications.jpg",
             "url": "",
             "date": "2018"
         },
@@ -48,7 +48,7 @@
             "order": 5,
             "title": "T-shirt",
             "description": "",
-            "img_small": "Tshirt-small.jpg",
+            "img_small": "Tshirt-small2.jpg",
             "img_big": "Tshirt-big.jpg",
             "url": "",
             "date": "2018"
