@@ -38,7 +38,7 @@ async function loadContent() {
     
     try {
         // Load root info.json
-        const rootInfo = await fetchJSON('/info.json');
+        const rootInfo = await fetchJSON('info.json');
         document.title = `${rootInfo.title}—JP Carrascal`;
         
         // Build breadcrumbs and nested path
