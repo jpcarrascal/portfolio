@@ -155,7 +155,6 @@ MUSIC+SOUND DESIGN:
 <title>Portfolio—JP Carrascal</title>
 
 
-<script src="/jquery-3.3.1.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Lato:700|Lato" rel="stylesheet">
 <script src="/scripts.js" type="text/javascript"></script>
 <link  href="/reset.css" type="text/css" rel="stylesheet"/>

@@ -1,91 +1,106 @@
-
-function autofill()
-{
-    $('.item-project').each(function(){
-        $(this).height($('.item-project').width());
+function autofill() {
+    const itemProjects = document.querySelectorAll('.item-project');
+    itemProjects.forEach(item => {
+        const width = itemProjects[0].offsetWidth;
+        item.style.height = width + 'px';
     });
 }
 
-$(document).ready(function() {
-
-
-    var curscroll = $(window).scrollTop();
-    $(window).scroll(function(){
-        if( $(window).scrollTop() > 10 && curscroll != $(window).scrollTop() ) {
-            $(".title-letter").addClass("smaller");
-        }
-        else
-        {
-            $(".title-letter").removeClass("smaller");
-        }
-        curscroll = $(window).scrollTop();
-    });
+document.addEventListener('DOMContentLoaded', function() {
+    let curscroll = window.pageYOffset || document.documentElement.scrollTop;
     
+    window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const titleLetters = document.querySelectorAll('.title-letter');
+        
+        if (scrollTop > 10 && curscroll != scrollTop) {
+            titleLetters.forEach(letter => {
+                letter.classList.add('smaller');
+            });
+        } else {
+            titleLetters.forEach(letter => {
+                letter.classList.remove('smaller');
+            });
+        }
+        curscroll = scrollTop;
+    });
 
     autofill();
-     
-    $( window ).resize(function() {
+    
+    window.addEventListener('resize', function() {
         autofill();
     });
 
-    $(window).on("popstate", function (event, state) {
-        $("#veil").css("visibility","hidden");
+    window.addEventListener('popstate', function(event) {
+        document.getElementById('veil').style.visibility = 'hidden';
     });
 
-    $(".view").click(function() {
-        $("#show").height($(window).height());
-        var url = $(this).attr("url");
-        $("#show-image").css("cursor","");
-        $("#show-image").click(function(){
-            return false;
-        });
-        $("#show-image").removeClass("fill-wide");
-        $("#show-image").removeClass("fill-tall");
-        $("#show-image").attr("src", $(this).attr("img")).on('load', function() {
-            if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
+    const viewButtons = document.querySelectorAll('.view');
+    viewButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const showElement = document.getElementById('show');
+            showElement.style.height = window.innerHeight + 'px';
+            
+            const url = this.getAttribute('url');
+            const showImage = document.getElementById('show-image');
+            
+            showImage.style.cursor = '';
+            showImage.onclick = function(e) {
+                e.preventDefault();
+                return false;
+            };
+            
+            showImage.classList.remove('fill-wide');
+            showImage.classList.remove('fill-tall');
+            
+            showImage.src = this.getAttribute('img');
+            
+            showImage.onload = function() {
+                if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
                     alert('broken image!');
                 } else {
-                    if(url != "")
-                    {
-                        $("#show-image").css("cursor","pointer");
-                        $("#show-image").click(function(){
-                            window.open(url,'_blank');
+                    if (url != "") {
+                        showImage.style.cursor = 'pointer';
+                        showImage.onclick = function() {
+                            window.open(url, '_blank');
                             return false;
-                        });
+                        };
                     }
-                    if(this.naturalWidth > $(window).width())
-                    {
-                        if(this.naturalHeight > $(window).height()){                
-                            $("#show-image").removeClass("fill-wide-show");
-                            $("#show-image").addClass("fill-tall-show");
+                    
+                    if (this.naturalWidth > window.innerWidth) {
+                        if (this.naturalHeight > window.innerHeight) {
+                            showImage.classList.remove('fill-wide-show');
+                            showImage.classList.add('fill-tall-show');
+                        } else {
+                            showImage.classList.add('fill-wide-show');
+                            showImage.classList.remove('fill-tall-show');
                         }
-                        else
-                        {
-                            $("#show-image").addClass("fill-wide-show");
-                            $("#show-image").removeClass("fill-tall-show");
-                        }
+                    } else {
+                        showImage.classList.remove('fill-wide-show');
+                        showImage.classList.add('fill-tall-show');
                     }
-                    else
-                    {
-                        $("#show-image").removeClass("fill-wide-show");
-                        $("#show-image").addClass("fill-tall-show");
-                    }
-                    $("#veil").css("visibility","visible");
+                    
+                    document.getElementById('veil').style.visibility = 'visible';
                 }
-            });
-        var imgArr = $(this).attr("img").split("/");
-        var imgName = imgArr[imgArr.length - 1]
-        history.pushState({page: 1}, imgName, "?view="+imgName)
+            };
+            
+            const imgArr = this.getAttribute('img').split('/');
+            const imgName = imgArr[imgArr.length - 1];
+            history.pushState({page: 1}, imgName, "?view=" + imgName);
+        });
     });
 
-    $(".close").click(function() {
-        $("#veil").css("visibility","hidden");
-        window.history.back();
+    const closeButtons = document.querySelectorAll('.close');
+    closeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            document.getElementById('veil').style.visibility = 'hidden';
+            window.history.back();
+        });
     });
     
-    $(document).keyup(function(e) {
-      if (e.keyCode === 27) $("#veil").css("visibility","hidden");   // esc
+    document.addEventListener('keyup', function(e) {
+        if (e.keyCode === 27) {
+            document.getElementById('veil').style.visibility = 'hidden';
+        }
     });
-
-    
 });
