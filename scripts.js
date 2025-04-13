@@ -10,11 +10,16 @@ function fetchJSON(path) {
 }
 
 function sortByOrderDateFolder(a, b) {
+    // First respect explicit order if defined
     if (a.order !== undefined && b.order !== undefined) {
         return a.order - b.order;
-    } else if (a.date !== undefined && b.date !== undefined) {
-        return b.date.localeCompare(a.date);
-    } else {
+    } 
+    // Second, prioritize date sorting when available
+    else if (a.date !== undefined && b.date !== undefined) {
+        return b.date.localeCompare(a.date); // Descending order (newest first)
+    } 
+    // Use project folder name as last resort
+    else {
         return a.project_folder.localeCompare(b.project_folder);
     }
 }
@@ -108,6 +113,7 @@ async function renderProjectContent(container, dirInfo, basePath) {
     
     // Add project items
     const items = dirInfo.items;
+    items.sort(sortByOrderDateFolder);
     const bgColors = [
         "rgba(166, 130, 255, 0.85)", 
         "rgba(113, 90, 255, 0.85)",
@@ -140,25 +146,32 @@ async function renderProjectContent(container, dirInfo, basePath) {
             
             // Check if there's an external link
             const hasExtLink = project.ext_link && /^((https?|ftp):\/\/)/.test(project.ext_link);
+            const hasVidLink = project.video_link && /^((https?|ftp):\/\/)/.test(project.video_link);
+            const hasPubLink = project.publication_link && /^((https?|ftp):\/\/)/.test(project.publication_link);
             
             html += `<div img='${imgSrcBig}' url='${project.url || ""}'>`;
             
+            var extLinks = '<br /><br />';
             if (hasExtLink) {
-                html += `<a href='${project.ext_link}' target='_blank'>`;
-            } else if (project.img_big !== "") {
-                html += `<a href='${imgSrcBig}' target='_blank'>`;
+                extLinks += `[<a href='${project.ext_link}' target='_blank' class='linkable'>link</a>]`;
             }
+            if (hasVidLink) {
+                extLinks += ` [<a href='${project.video_link}' target='_blank' class='linkable'>video</a>]`;
+            }
+            if (hasPubLink) {
+                extLinks += ` [<a href='${project.publication_link}' target='_blank' class='linkable'>publication</a>]`;
+            }
+            
+            /*else if (project.img_big !== "") {
+                extLink = `<a href='${imgSrcBig}' target='_blank'>[img]</a>`;
+            }*/
             
             html += `<div class='item-text darken'>
                 <div class='item-text-wrapper'>
-                    <h3 class='item-title'>${project.title}</h3>
-                    <p class='item-description'>${project.date ? " (" + project.date + ")" : ""} ${project.description}</p>
+                    <h3 class='item-title'>${project.title} ${project.date ? " (" + project.date + ")" : ""}</h3>
+                    <p class='item-description'>${project.description}${extLinks}</p>
                 </div>
             </div>`;
-            
-            if (hasExtLink || project.img_big !== "") {
-                html += `</a>`;
-            }
             
             html += `</div>`;
         }
