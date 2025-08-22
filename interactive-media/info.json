@@ -9,6 +9,18 @@
     "items": [
         {
             "order": 0,
+            "title": "A Sense Of Surrounding",
+            "description": "Participatory soundscape to encourage environmental awareness. Presented at Ars Electronica 2024 (Linz, Austria). Supported by ArtEO / www.arteo.earth ",
+            "img_small": "ASenseOfSurrounding.jpg",
+            "img_big": "",
+            "ext_link": "",
+            "video_link": "https://www.youtube.com/watch?v=A5b8YU7i6RI",
+            "publication_link": "",
+            "url": "",
+            "date": "2024"
+        },
+        {
+            "order": 0,
             "title": "inTangible",
             "description": "A reflection on digital vs. physical co-ownership",
             "img_small": "intangible.jpg",

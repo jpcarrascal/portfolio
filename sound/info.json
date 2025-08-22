@@ -9,10 +9,10 @@
     "items": [
         {
             "title": "Spacebarman",
-            "description": "My main music project. I compose, record and produce all the music for Spacebarman. I have released an album and several EPs. It has recently become a live band with a little help of my colleagues Mauricio Belalcázar (drums) and Daniel Rosero (bass).",
-            "img_small": "Spacebarman-logo-big.jpg",
-            "img_big": "Spacebarman-logo-big.jpg",
-            "ext_link": "http://www.spacebarman.com",
+            "description": "My main music project. I compose, record and produce all the music for Spacebarman. I have released several works among albums, EPs and singles. Click the link below for more information.",
+            "img_small": "Spacebarman.jpg",
+            "img_big": "Spacebarman.jpg",
+            "ext_link": "https://www.spacebarman.com",
             "date": "",
             "items": [],
             "order": 0
