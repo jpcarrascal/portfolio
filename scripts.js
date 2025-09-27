@@ -349,7 +349,7 @@ function showImage(imgSrc, url) {
     if (imgSrc) {
         const imgParts = imgSrc.split('/');
         const imgName = imgParts[imgParts.length - 1];
-        history.pushState({page: 1}, imgName, "?view=" + imgName);
+        //history.pushState({page: 1}, imgName, "?view=" + imgName);
     }
 }
 
@@ -412,7 +412,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.close').forEach(button => {
         button.addEventListener('click', function() {
             document.getElementById('veil').style.visibility = 'hidden';
-            window.history.back();
+            //window.history.back();
         });
     });
     
