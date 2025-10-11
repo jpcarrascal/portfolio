@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <meta name="description" content="Music & Sound — JP Carrascal">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <title>Music & Sound — JP Carrascal</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Lato" rel="stylesheet">
+    <script src="../shared/scripts.js" type="text/javascript"></script>
+    <script src="../shared/template-engine.js" type="text/javascript"></script>
+    <link href="../shared/reset.css" type="text/css" rel="stylesheet"/>
+    <link href="../shared/style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+<div id="veil">
+    <div class="close">&times;</div>
+    <div id="show">
+        <img id="show-image" src="" />
+    </div>
+</div>
+    
+<div class="header">
+    <div class="title">
+        <div class="letter-wrapper"><div class="title-letter">P</div></div>
+        <div class="letter-wrapper"><div class="title-letter">O</div></div>
+        <div class="letter-wrapper"><div class="title-letter">R</div></div>
+        <div class="letter-wrapper"><div class="title-letter">T</div></div>
+        <div class="letter-wrapper"><div class="title-letter">F</div></div>
+        <div class="letter-wrapper"><div class="title-letter">O</div></div>
+        <div class="letter-wrapper"><div class="title-letter">L</div></div>
+        <div class="letter-wrapper"><div class="title-letter">I</div></div>
+        <div class="letter-wrapper"><div class="title-letter">O</div></div>
+    </div>
+    <div class="project_title">Music & Sound</div>
+</div>
+
+<div class="container grid">
+    <div id="content" class="content">
+        <div id="loading" class="loading">
+            <div class="loading-spinner"></div>
+            <span>Loading Music & Sound...</span>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div id="breadcrumbs">
+        <a href="../">Portfolio</a>
+        <span class="sep">&#9667;</span>
+        <a href="#">Music & Sound</a>
+    </div>
+    <div id="credit">
+        <span>
+            Designed and coded by <a href="http://www.jpcarrascal.com" target="_blank">JP Carrascal</a>
+        </span>
+    </div>
+</div>
+
+<script>
+// Initialize the category page
+document.addEventListener('DOMContentLoaded', function() {
+    CategoryRenderer.init('music-sound');
+});
+</script>
+
+</body>
+</html>

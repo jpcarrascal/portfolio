@@ -1,0 +1,89 @@
+{
+    "order": 6,
+    "title": "Other Projects",
+    "description": "Web development, graphic design, and miscellaneous projects",
+    "img_small": "web.jpg",
+    "img_big": "",
+    "url": "",
+    "date": "",
+    "items": [
+        {
+            "order": 1,
+            "title": "MobileHCI 2018",
+            "description": "Web and print work for the 20th International Conference on Human-Computer Interaction with Mobile Devices and Services (MobileHCI) 2018 conference.",
+            "img_small": "MobileHCI2018/MobileHCI2018.jpg",
+            "img_big": "MobileHCI2018/MobileHCI2018.jpg",
+            "ext_link": "http://mobilehci.acm.org/2018",
+            "url": "",
+            "date": "2018",
+            "project_folder": "web"
+        },
+        {
+            "order": 2,
+            "title": "Spacebarman website",
+            "description": "Spacebarman is my personal music project. Here are different iterations of Spacebarman's website, as well as music and videos.",
+            "img_small": "Spacebarman/Spacebarman-web2020.jpg",
+            "img_big": "Spacebarman/Spacebarman-web2020.jpg",
+            "ext_link": "http://www.spacebarman.com",
+            "url": "",
+            "date": "2018",
+            "project_folder": "web"
+        },
+        {
+            "order": 3,
+            "title": "TuneMap",
+            "description": "A geolocation-based music browser, winner of the Deezer award during the Music Hack Day Barcelona 2012, and staff pick by Visual.ly (currently under maintenance)",
+            "img_small": "TuneMap/TuneMap.jpg",
+            "img_big": "TuneMap/TuneMap.jpg",
+            "ext_link": "http://www.tunemap.net",
+            "url": "",
+            "date": "2010",
+            "project_folder": "web"
+        },
+        {
+            "order": 4,
+            "title": "This Website",
+            "description": "JP's Portfolio. Designed and coded from scratch using HTML, CSS, and JavaScript",
+            "img_small": "web.jpg",
+            "img_big": "web.jpg",
+            "ext_link": "",
+            "url": "",
+            "date": "",
+            "project_folder": ""
+        },
+        {
+            "order": 5,
+            "title": "Miscellaneous Graphic Design",
+            "description": "Album covers, posters, and promotional materials for various projects",
+            "img_small": "Miscellaneous/Spacebarman+Flames-Diobar.jpg",
+            "img_big": "Miscellaneous/Spacebarman+Flames-Diobar.jpg",
+            "ext_link": "",
+            "url": "",
+            "date": "2020",
+            "project_folder": "graphic"
+        },
+        {
+            "order": 6,
+            "title": "MobileHCI 2018 Graphics",
+            "description": "Graphic design materials for the MobileHCI 2018 conference including posters, flyers, and branding",
+            "img_small": "MobileHCI2018/MobileHCI2018.jpg",
+            "img_big": "MobileHCI2018/MobileHCI2018.jpg",
+            "ext_link": "",
+            "url": "",
+            "date": "2018",
+            "project_folder": "graphic"
+        },
+        {
+            "order": 7,
+            "title": "Unfulfilled Album Art",
+            "description": "Album cover and promotional graphics for the \"Unfulfilled\" music release",
+            "img_small": "Unfulfilled.jpg",
+            "img_big": "Unfulfilled.jpg",
+            "ext_link": "",
+            "url": "",
+            "date": "",
+            "project_folder": ""
+        }
+    ],
+    "categories": []
+}
